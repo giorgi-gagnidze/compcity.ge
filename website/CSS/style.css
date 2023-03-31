@@ -1,0 +1,120 @@
+/* Import fornt start */
+
+@font-face {
+  font-family: "BPG LE Studio 02 Caps";
+  src: url("../fonts/bpg-le-studio-02-caps-webfont.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/bpg-le-studio-02-caps-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/bpg-le-studio-02-caps-webfont.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/bpg-le-studio-02-caps-webfont.woff") format("woff"),
+    /* Pretty Modern Browsers */
+      url("../fonts/bpg-le-studio-02-caps-webfont.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/bpg-le-studio-02-caps-webfont.svg#bpg_le_studio_02_capsregular")
+      format("svg"); /* Legacy iOS */
+}
+
+/* Import font end */
+
+/* Variables start */
+
+:root {
+  --mainColor: #f56a09;
+  --black: rgb(67, 67, 67);
+}
+
+/* Variables end */
+
+/* CSS reset start */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS reset end */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: lightgray;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  gap: 50px;
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 40px;
+  font-family: sans-serif;
+  color: var(--black);
+  text-align: center;
+}
+
+.logo-container img {
+  margin: 0 50px;
+}
+
+.contact-heading {
+  font-family: "BPG LE Studio 02 Caps", sans-serif;
+  font-size: 20px;
+}
+
+.link {
+  font-size: 60px;
+  color: var(--mainColor);
+  text-decoration: none;
+  text-align: center;
+  font-family: "BPG LE Studio 02 Caps", sans-serif;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+span {
+  font-family: "BPG LE Studio 02 Caps", sans-serif;
+  font-size: 16px;
+}
+
+.fb-link,
+.mail-link,
+.tel-link {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "BPG LE Studio 02 Caps", sans-serif;
+  margin-left: 10px;
+}
+
+.fb-link:hover,
+.mail-link:hover,
+.tel-link:hover {
+  text-decoration: underline;
+}
+
+span {
+  color: var(--mainColor);
+}
+
+@media screen and (max-width: 500px) {
+  .link {
+    font-size: 40px;
+  }
+}
